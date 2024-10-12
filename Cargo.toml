@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = ["contracts/*"]
+
+[workspace.package]
+version = "0.0.0"
+edition = "2021"
+
+[workspace.dependencies]
+cosmwasm-std = { git = "https://github.com/CosmWasm/cosmwasm", tag = "v2.2.0-rc.3" }
+inner = { path = "contracts/inner" }
+outer = { path = "contracts/outer" }

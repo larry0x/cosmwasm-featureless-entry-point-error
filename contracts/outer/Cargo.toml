@@ -1,0 +1,11 @@
+[package]
+name = "outer"
+version = { workspace = true }
+edition = { workspace = true }
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+cosmwasm-std = { workspace = true }
+inner = { workspace = true }
